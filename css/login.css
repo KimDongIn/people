@@ -1,0 +1,142 @@
+.sectionSell{
+	height: 100vh;
+}
+
+.loginSell{
+	padding: 100px 0px;
+	width: 400px;
+	margin:auto
+}
+.loginSell > *{
+	background: #ffffff;
+	border: 1px solid #cef2fd;
+}
+
+.loginSell > input[type="radio"] {
+	display: none;
+}
+/* 개인 기업 로그인 스위치*/
+.loginSell > input[type="radio"]+label {
+	padding: 15px 0px;
+	float: left;
+	width: 50%;
+	cursor: pointer;
+	text-align: center;	
+	background: #1162a7;
+	color: #ffffff;
+	
+	border: 1px solid #1162a7;
+}
+
+/*클릭시 태두리 표시*/
+.loginSell > input[type="radio"]:checked + label{
+	background: #cef2fd;
+	color: #000000;
+}
+
+
+/* 인풋에 체크가 해당 요소보이게 설정 */
+input[id="tab01"]:checked ~ .con1 {
+	display: block;
+}
+input[id="tab02"]:checked ~ .con2 {
+	display: block;
+}
+
+/*로그인 박스*/
+.conbox {
+	float: left;
+	padding: 50px 0px 0px;
+	clear: both;
+	width: 100%;
+	height: 500px;
+	background: #ffffff;
+	margin: 0 auto;
+	display: none;
+}
+
+/*indexPage tap manu end ===================================================================*/
+
+/*로그인 ----------------------------------------------------*/
+.qukLogin {
+	float: left;
+	clear: both;
+	margin-top: 6px;
+	padding: 0px 5%;
+}
+.qukLogin form{
+	margin: auto;
+	width: 360px;
+}
+
+.signBox {
+	float: left;
+	width: 75%;
+}
+
+.signBox > input {
+	height: 35px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.loginButton{
+	float: left;
+	width: 25%;
+}
+
+.loginButton > button {
+	border: none;
+	width: 100%;
+	height: 70px;
+	background-color: #1162a7;
+	color: #ffffff;
+}
+
+.snsLogin {
+	padding-top: 50px;
+	clear: both;
+}
+
+.snsLogin > div {
+	text-align: center;
+	width: 100%;
+}
+
+.membershopButton {
+	clear: both;
+	padding-top: 20px;
+	margin-bottom: ;
+	width: 100%;
+	height: 40px;
+}
+
+.membershopButton > button {
+	width: inherit;
+	height: inherit;
+}
+
+/*작은 로그인 부가버튼*/
+.minMembership{
+	height: 35px;
+	background-color: #f2f2f2;
+	clear: both;
+	text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+.minMembership div{
+	display: inline-block;
+}
+
+
+/*빠른 메뉴버튼*/
+.qukconnect > div.col {
+	float: left;
+	margin: -3px -4px 0px 1px;
+	border: 0px solid #e5e5e5;
+}
+
+.qukSnsLogin a{
+	width: 18px;
+	padding:5px 2px;
+}
+

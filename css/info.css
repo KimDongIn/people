@@ -1,0 +1,358 @@
+section {
+	background-color: #e5e5e5;
+
+}
+
+div.sectionSell {
+	padding: 50px 0px;
+	margin: 0 auto;
+}
+
+.boardSell {
+	padding: 30px 0px;
+	color: #1162a7;
+}
+
+.infoBox {
+	clear: both;
+	padding: 30px 20px;
+	margin: 0 auto;
+	margin: 30px 0px;
+	background-color: #ffffff;
+}
+
+/* float 오류 수정*/
+.infoBox::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.infoBox img {
+	width: 100%;
+}
+
+.View_area > img {
+	float: left;
+	width: 100%;
+	padding: 10px;
+}
+
+.infoArea {
+	float: left;
+}
+
+.infoArea > div > div {
+	margin: 40px 0px 0px;
+}
+
+.infoBoard {
+	border-left: 2px solid #e5e5e5;
+	height: 25px;
+	padding: 0px 0px 0px 20px;
+}
+
+
+.col {
+	float: left;
+	height: 100%;
+	padding: 20px;
+
+}
+
+.col > div {
+	text-align: center;
+	margin: 15px 0px;
+	float: left;
+	width: 50%;
+	font-size: 16px;
+}
+
+
+/*불러온 데이타 출력 박스-----------------------------------------*/
+.infoData {
+	display: block;
+	float: left;
+	margin: 0 auto;
+	padding: 0px 20px;
+
+}
+
+.infoData > div {
+	float: left;
+	font-size: 16px;
+}
+
+div.infoData > div:nth-child(1) {
+	width: 30%;
+}
+
+div.infoData > div:nth-child(2) {
+	width: 50%;
+}
+
+
+/* 기업 정보 */
+.compPoto {
+	height: 200px;
+	background-color: #fff;
+	padding: 10px
+}
+
+.compPoto > div {
+	width: 24%;
+	float: left;
+	background-color: #e5e5e5;
+	border: 1px solid #000;
+	height: 100%;
+	padding: 10px;
+	margin: 0px 6px;
+}
+
+.compPoto img {
+	margin: 5px;
+	width: 100%;
+	height: 100%;
+}
+
+.boardSell span {
+	font-size: 25px;
+}
+
+.imgList img {
+	width: 100%;
+	height: 100%;
+}
+
+.imgList {
+	min-height: 200px;
+}
+
+
+
+/*---------------------------------------------------*/
+
+.inquiryBoard {
+	padding: 20px 0px 0px;
+	width: 800px;
+	height: 1000px;
+	margin: 0 auto;
+}
+
+.inquiryBoard > div {
+	min-height: 50px;
+	margin: 0px 20px 20px;
+	background-color: #ffffff;
+	text-align: center;
+
+}
+
+.inquiryTitle {
+	padding: 20px 0px;
+	font-size: 25px;
+}
+
+.inquiryContents {
+	height: 500px;
+	padding: 10px 0px;
+	font-size: 16px;
+}
+
+.inquiryPhotoList > div {
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+
+.inquiryPhotoList img {
+	width: 100%;
+	height: 100%;
+}
+
+.inquiryPhotoList::after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+/*-------------------------------------------*/
+
+.recoLogo img {
+	width: 75%;
+}
+
+.infoBox > div {
+	float: left;
+	padding: 20px 0px;
+}
+
+.recruiteInfoBox > table {
+	text-align: center;
+	width: 100%;
+}
+
+.recruiteInfoBox tr {
+	display: block;
+	width: 100%;
+	margin: 10px 0px;
+}
+
+.tableList {
+	border-top: 2px solid #e5e5e5;
+	border-bottom: 2px solid #e5e5e5;
+}
+
+.tableHeader {
+	border-top: 2px solid #000000;
+	border-bottom: 2px solid #666666;
+}
+
+.recruiteInfoBox td {
+	display: block;
+	float: left;
+	padding: 20px 0px;
+}
+
+.recruiteInfoBox tr::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.recruiteInfoBox .row1 {
+	width: 10%;
+}
+
+.recruiteInfoBox .row2 {
+	width: 30%;
+}
+
+.recruiteInfoBox .row3 {
+	width: 20%;
+}
+
+.recruiteInfoBox .row4 {
+	width: 15%;
+}
+
+.recruiteInfoBox .row5 {
+	width: 15%;
+}
+
+.recruiteInfoBox .row6 {
+	width: 10%;
+}
+
+.CVbtn {
+	padding: 0px 25px;
+}
+
+.infoBox input[type='button'] {
+	width: 100%;
+	height: 60px;
+}
+
+/* 회사 소개===============================================================*/
+/*기본 설정*/
+.conBox span {
+	font-size: 25px;
+}
+
+.conBox > div {
+	float: left;
+}
+
+.conBox::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+/*그리드 나누기 */
+.conBox {
+	height: 100%;
+}
+
+.sideMenu {
+	background: #ffffff;
+	height: 800px;
+}
+
+.conBox::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.sideMenu::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.mainMenu {
+	height: 100%;
+	padding: 20px;
+	line-height: 250%;
+}
+
+/*내용 구역*/
+.content {
+	height: 100%;
+	min-height: 100px;
+	display: none;
+}
+
+.content > div {
+	margin: 10px 0px 30px 20px;
+}
+
+.content strong {
+	font-weight: 800;
+	font-size: 18px;
+}
+
+.lastTitel {
+	text-align: right;
+}
+
+/*----------*/
+
+input[type="radio"] {
+	display: none;
+}
+
+/*라벨 모양 css*/
+.sideMenu > label {
+	float: left;
+	width: 100%;
+	line-height: 60px;
+	border: 1px solid #e5e5e5;
+	padding: 0px 20px;
+}
+
+/* 컨텐트 오픈 이벤트*/
+input[id="box1"]:checked ~ .mainMenu > div.con1 {
+	display: block;
+}
+
+input[id="box2"]:checked ~ .mainMenu > div.con2 {
+	display: block;
+}
+
+input[id="box3"]:checked ~ .mainMenu > div.con3 {
+	display: block;
+}
+
+/*스위치 이벤트*/
+input[id="box1"]:checked ~ .sideMenu > label[for="box1"] {
+	border: 1px solid #1162a7;
+}
+
+input[id="box2"]:checked ~ .sideMenu > label[for="box2"] {
+	border: 1px solid #1162a7;
+}
+
+input[id="box3"]:checked ~ .sideMenu > label[for="box3"] {
+	border: 1px solid #1162a7;
+}

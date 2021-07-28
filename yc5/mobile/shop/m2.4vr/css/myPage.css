@@ -1,0 +1,309 @@
+div.sectionSell {
+	padding: 50px 0px;
+	min-height: 100vh;
+	height: 100%;
+}
+/*기업 Comp---------------------------------------------------*/
+/*기업 Comp END---------------------------------------------------*/
+/*개인 Comp---------------------------------------------------*/
+
+input[type="button"] {
+	display: none;
+}
+
+.sectionSell span {
+	color: #1162a7;
+	font-size: 35px;
+	padding: 0px 0px;
+}
+
+
+.sectionSell > div {
+	clear:both;
+	margin-bottom: 20px;
+}
+/*float 초기화*/
+.myDate{
+	clear: both;
+	content: '';
+	display: block;
+}
+
+/* 첫줄박스*/
+.myDate{
+	clear: both;
+	width: 100%;
+	height: 180px;
+}
+.myDate > div {
+	border: 1px solid #000000;
+	height: 170px;
+}
+
+/**/
+.myImg{
+	float: left;
+	width: 170px;
+	margin: 0px 5px 0px 0px;
+}
+/*회원 이미지*/
+#View_area {
+	margin: 8px 8px;
+	height: 150px;
+}
+#View_area > img{
+	width: 100%;
+	height: 100%;
+	background: #e5e5e5;
+	border-radius: 50%;
+}
+
+#photoUplode {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 95px;
+	top: -40px;
+}
+#photoCancel {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 80px;
+	top: -65px;
+}
+
+
+/*기본 정보*/
+
+.basicInformation{
+	width: calc(100% - 175px);
+}
+.basicInformation::after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+div.basicInformation {
+	padding: 10px;
+	float: right;
+}
+
+div.basicInformationTop > label {
+	padding: 0px 10px;
+}
+
+div.col {
+	margin: 15px 0px;
+	float: left;
+}
+
+div.col > div {
+	float: left;
+	margin: 5px 0px;
+	height: 25px;
+}
+/*------------------------------------------------------------*/
+/*스위치 이미지*/
+#cvButtom {
+	height: 30px;
+	width: 100px;
+}
+#cvFormalBtnImg {
+	height: 30px;
+	width: 100px;
+}
+#cvBntImg{
+	height: 30px;
+	width: 100px;
+}
+#compBtnImg{
+	height: 30px;
+	width: 100px;
+}
+#payBtnImg{
+	height: 30px;
+	width: 100px;
+}
+/*추천 채용공고*/
+div.bestResources{
+	width: 100%;
+/*	height: 100%;*/
+	border: 1px solid #000000;
+}
+
+/*지원 현황*/
+div.supportStatus{
+	min-height: 200px;
+	width: 100%;
+	border: 1px solid #000000;
+}
+div.supportStatus::after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.supportStatus > div {
+	float: left;
+	height: inherit;
+	padding: 20px 80px;
+}
+
+div.volunteer > div{
+	float: right;
+	width: 29%;
+	
+}
+
+img.volunteerPhoto{
+	padding: 20px;
+	width: 200px;
+}
+
+
+/*개인 Comp END---------------------------------------------------*/
+
+.col{
+	
+}
+
+.vipTitel{
+	padding: 5px 0px;
+}
+
+.vipImg{
+	padding: 5px 0px;
+}
+
+.vipImg img{
+	width: 100%;
+	height: 100%;
+}
+
+.vipText1{
+	padding: 5px 0px;
+}
+.vipText2{
+	
+	padding: 5px 0px;
+}
+
+
+/*-----------------------------------------------*/
+
+#compinfoBtn + label{
+	height: 30px;
+	width: 100px;
+	background: #666666;
+	display: inline-block;
+}
+/*---------------------------------------------------*/
+
+.bestResources > table{
+	width: 100%;
+	text-align: center;
+}
+
+.bestResources tr{
+	display: block;
+	width: 100%;
+	margin: 10px 0px;
+}
+.bestResources tr::after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+
+.bestResources td{
+	display: block;
+	float: left;
+	padding: 20px 0px;
+}
+.bestResources .row1{
+	width: 30%;
+}
+.bestResources .row2{
+	width: 15%;
+}
+.bestResources .row3{
+	width: 15%;
+}
+.bestResources .row4{
+	width: 10%;
+}
+.bestResources .row5{
+	width: 10%;
+}
+.bestResources .row6{
+	width: 10%;
+}
+.bestResources .row7{
+	width: 10%;
+}
+
+.tableHeader{
+	border-top: 2px solid #000000;
+	border-bottom: 2px solid #666666;
+}
+
+.tableList{
+	border-top: 2px solid #e5e5e5;
+	border-bottom: 2px solid #e5e5e5;
+}
+
+.supportStatus > table{
+	width: 100%;
+	text-align: center;
+}
+
+.supportStatus tr{
+	display: block;
+	width: 100%;
+	margin: 10px 0px;
+}
+.supportStatus tr::after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+
+.supportStatus td{
+	display: block;
+	float: left;
+	padding: 20px 0px;
+}
+
+.supportStatus .row1{
+	width: 15%;
+}
+.supportStatus .row2{
+	width: 35%;
+}
+.supportStatus .row3{
+	width: 15%;
+}
+.supportStatus .row4{
+	width: 15%;
+}
+.supportStatus .row5{
+	width: 10%;
+}
+.supportStatus .row6{
+	width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,433 @@
+
+.sectionSell::after{
+	clear: both;
+	content: "";
+	display: block;
+}
+/* section1--------------------------------------------------------------------------------- */
+
+
+.interfaceBoard {
+	width: 100%;
+	padding: 10px 0px;
+}
+
+.sectionLink {
+	width: 24%;
+}
+
+.bannerList {
+	width: 100%;
+	overflow: hidden;
+}
+
+/*빠른 메뉴버튼*/
+.qukconnect > div.col {
+	border: 1px solid #cef2fd;
+	float: left;
+}
+
+
+/*슬라이드 베너 ===================================================================*/
+
+/* 베너 크기 맞추기 , 베너 슬라이드 되게 */
+/* banner */
+
+.bannerList ul {
+	display: flex;
+	position: relative;
+	height: 100%;
+}
+
+.bannerList ul li {	
+	width: 100%;
+}
+.bannerList li img{	
+	width: 100%;
+	object-fit: contain;
+}
+
+/* 광고 협찬 베너--------------------------------------------*/
+.wingBanner {
+	padding: 30px 0px;
+    width: 230px;
+    height: inherit;
+	overflow: hidden;
+	margin: 0 10px;
+}
+.ban1 {
+	
+}
+.ban2 {
+	cursor: pointer;
+}
+.wingBanner ul {
+/*	width: calc(100% * 4);*/
+	display: flex;
+/*	animation: slide 20s infinite;*/
+}
+
+.wingBanner li {
+/*	width: calc(100% / 4);*/
+}
+
+.wingBanner img {
+	width: 100%;
+}
+
+/*-------------------------------------------------------*/
+
+@keyframes slide {
+	0% {
+		margin-left: 0;
+	}
+
+	/* 0 ~ 10  : 정지 */
+	10% {
+		margin-left: 0;
+	}
+
+	/* 10 ~ 25 : 변이 */
+	25% {
+		margin-left: -100%;
+	}
+
+	/* 25 ~ 35 : 정지 */
+	35% {
+		margin-left: -100%;
+	}
+
+	/* 변이 */
+	50% {
+		margin-left: -200%;
+	}
+
+	/*  정지 */
+	60% {
+		margin-left: -200%;
+	}
+
+	/*  변이 */
+	75% {
+		margin-left: -300%;
+	}
+
+	/* 정지 */
+	85% {
+		margin-left: -300%;
+	}
+
+	/* 100 ~ 0 : 변이 */
+	100% {
+		margin-left: 0;
+	}
+}
+
+
+
+/*section2*/
+/* ----------------------------------------------------------------------------------- */
+.vipBoard {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	min-height: 250px;
+}
+
+.vipBoard a {
+	display: block;
+	border: 1px solid #e5e5e5;
+	padding: 5px;
+	height: 30vh;
+	font-size: 1rem;
+	line-height: 100%;
+	width: 100%;
+}
+.col{
+	width: 50%
+}
+
+.vipTitel{
+	height: 22%;
+}
+.vipImg{
+	height: 60%;
+}
+.vipText1{
+	height: 9%;
+}
+.vipText1{
+	height: 9%;
+}
+.vipImg img{
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+
+/*===================================================================================*/
+
+/*로그인 ----------------------------------------------------*/
+
+.qukLogin {
+	clear: both;
+	margin-top: 6px;
+	padding: 0px 5%;
+}
+
+.qukLogin > form > div {
+	margin: 20px 0px 0px;
+}
+
+.signBox {
+	float: left;
+	margin: 10px 0px;
+	width: 80%;
+}
+
+.signBox > input {
+	height: 35px;
+	width: 100%;
+}
+.loginButton > button {
+	border: none;
+	margin: 20px 0px 0px;
+	height: 70px;
+	width: 20%;
+	background-color: #1162a7;
+	color: #ffffff;
+}
+.membershopButton {
+	clear: both;
+	padding: 30px 0px;
+	width: 100%;
+	height: 40px;
+}
+
+/*작은 로그인 부가버튼*/
+.minMembership {
+	float: left;
+	background: #e5e5e5;
+	height: 33px;
+}
+
+.minMembership > div {
+	float: left;
+	margin: 0px 0px 0px 5px;
+}
+
+.qukMemberBtn {
+	width: 48%;
+	padding: 10px 0px;
+}
+
+.qukSnsLogin {
+	width: 48%;
+	padding: 3px 0px;
+}
+
+.qukSnsLogin a {
+	float: left;
+	width: 23%;
+	margin: 0px 0px;
+}
+
+.qukSnsLogin img {
+	width: 80%;
+}
+
+.qukconnect {
+	width: 100%;
+}
+
+.qukconnect img {
+	width: 100%;
+}
+
+.subBanner {
+	background: #ffffff;
+}
+.subBanner img{
+	width: 100%;
+	padding: 10px 10px;
+}
+
+
+
+/*로그인 후 데이타-------------------------------------------------------------------------*/
+
+div.loginDate {
+	background-color: #ffffff;
+	height: 60px
+}
+
+div.loginDate > div {
+	float: left;
+	width: 50%;
+}
+
+.loginDate input[type="button"] {
+	display: none;
+}
+
+
+.loginDate label {}
+
+.loginDate > div:nth-child(1) {
+	padding: 20px 0px 20px 20px;
+}
+
+div.loginDate > div:nth-child(2) {
+	padding: 12px 10px;
+}
+
+
+
+/*-------------------------------------------------------------------------------------*/
+/*  이력서 채용공고 리스트 */
+
+.minList {
+	text-align: center;
+	font-size: 16px;
+	margin: 50px 0px ;
+}
+
+.minList > table {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.minList tr {
+	float: left;
+	display: block;
+	width: 100%;
+	height: 60px;
+	padding: 20px 0px;
+	margin: 5px 0px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+.minList td {
+	float: left;
+	display: block;
+}
+
+.minList tr:nth-child(1) {
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+
+.minList .row1 {
+	width: 15%;
+}
+.minList .row2 {
+	width: 30%;
+}
+.minList .row3 {
+	width: 15%;
+}
+.minList .row4 {
+	width: 10%;
+}
+.minList .row5 {
+	width: 15%;
+}
+.minList .row6 {
+	width: 15%;
+}
+
+/*====================================*/
+	.listBoard {
+		width: 100%;
+	}
+
+	.listBoard table {
+		text-align: center;
+		border-spacing: 0;
+		width: 100%;
+		/*		border: 1px solid #666666;*/
+	}
+
+	.listBoard tr {
+		display: flex;
+		margin: 15px 0;
+	}
+
+	.listBoard th {
+		background: #cef2fd;
+		font-size: 1rem;
+		font-weight: 800;
+		line-height: 200%;
+		border-top: 1px solid #666666;
+		border-bottom: 1px solid #666666;
+	}
+	.listBoard th,
+	.listBoard td{
+		padding: 0 10px;
+	}
+
+	.listBoard tr {
+		font-size: .8rem;
+		line-height: 250%;
+		border-top: 1px solid #e5e5e5;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.list1 th:nth-child(1),
+	.list1 td:nth-child(1) {
+		width: 20%;
+	}
+
+	.list1 th:nth-child(2),
+	.list1 td:nth-child(2) {
+		width: 40%;
+	}
+
+	.list1 th:nth-child(3),
+	.list1 td:nth-child(3) {
+		width: 20%;
+	}
+
+	.list1 th:nth-child(4),
+	.list1 td:nth-child(4) {
+		width: 20%;
+	}
+
+/*=====================*/
+	.list2 th:nth-child(1),
+	.list2 td:nth-child(1) {
+		width: 20%;
+	}
+
+	.list2 th:nth-child(2),
+	.list2 td:nth-child(2) {
+		width: 40%;
+	}
+
+	.list2 th:nth-child(3),
+	.list2 td:nth-child(3) {
+		width: 20%;
+	}
+
+	.list2 th:nth-child(4),
+	.list2 td:nth-child(4) {
+		width: 20%;
+	}
+
+
+
+
+
+
+
+
+
+
+/*===================================================================================*/
+
+
+
+
+
+/*===================================================================================*/

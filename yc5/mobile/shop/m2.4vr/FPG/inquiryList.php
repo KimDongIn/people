@@ -1,0 +1,87 @@
+<section>
+	<div class="sectionSell">
+		<div class="QanABoard">
+
+			<div>
+				<span>자주 묻는 질문</span>
+			</div>
+
+			<div class="QanAList">
+				<input type="radio" name="accordion" id="answer01">
+				<label class="acBt" for="answer01">무료와 유료차이<em></em></label>
+				<div class="hideBoard">
+					<p>
+						무료와 유료 차이<br>
+						채용공고와 이력서 기능을 이용하려면 결제가 필요합니다.<br>
+
+						STANDARD <br>
+						- 기본적인 결제로 채용공고 등록과 이력서보기 기능을 볼 수 있습니다.<br>
+						
+						PREMIUM <br>
+						- 기본적인 결제 기능과 추가적인 이력서 검색 기능과 vip이력서 보기 기능이 추가됩니다.
+					</p>
+				</div>
+
+				<input type="radio" name="accordion" id="answer02">
+				<label class="acBt" for="answer02">결제 방법<em></em></label>
+				<div class="hideBoard">
+					<p>로그인 후 화면 우측상단 내정보 클릭</p>
+					<img src="../../img/inquiryList/qna5.png" alt="">
+					<p>기본 정보창 유료서비스 클릭</p>
+					<img src="../../img/inquiryList/qna6.png" alt="">
+					<p>원하는 서비스 결제 클릭 및 결제</p>
+					<img src="../../img/inquiryList/qna7.png" alt="">
+				</div>
+
+				<input type="radio" name="accordion" id="answer03">
+				<label class="acBt" for="answer03">회원가입 방법<em></em></label>
+				<div class="hideBoard">
+					<p>회원가입 클릭</p>
+					<img src="../../img/inquiryList/qna1.png" alt="">
+					<p>개인 또는 기업회원 선택후 내용 기입</p>
+					<img src="../../img/inquiryList/qna2.png" alt="">
+					<img src="../../img/inquiryList/qna3.png" alt="">
+					<p>회원가입 완료 확인</p>
+					<img src="../../img/inquiryList/qna4.png" alt="">
+				</div>
+			</div>
+			<!--QanAList 끝!-->
+
+			<div class="QanABtn">
+				<input type="button" id="answerBtn" onclick="location.href='/gnu/bbs/write.php?bo_table=people_QnA'">
+				<label for="answerBtn">문의하기</label>
+			</div>
+
+
+
+			<!-- 문의 내역을 가져옵니다!
+					<div>
+						<span>나의 문의게시판</span>
+					</div>
+					<div class="inquiryBoard">
+
+						<table>
+							<tr>
+								<td class="col01">번호</td>
+								<td class="col02">제목</td>
+								<td class="col03">날짜</td>
+							</tr>
+
+							<tr>
+								<td class="col01">1</td>
+								<td class="col02">
+									<a href="inquiryInfo.php">
+										질문제목
+									</a>
+								</td>
+								<td class="col03">2020-13-13</td>
+							</tr>
+						</table>
+					</div>-->
+
+
+
+		</div>
+
+	</div>
+</section>

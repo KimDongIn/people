@@ -1,0 +1,443 @@
+/* section1--------------------------------------------------------------------------------- */
+
+
+.interfaceBoard {
+	width: 1280px;
+	margin: 0 auto;
+	padding: 30px 0px;
+	position: relative;
+}
+
+.interfaceBoard::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.sectionLink {
+	float: right;
+	width: 24%;
+}
+
+.bannerList {
+	float: left;
+	width: 70%;
+}
+
+.bannerList2 {
+	float: left;
+	width: 100%;
+}
+
+
+/*슬라이드 베너 ===================================================================*/
+
+/* 베너 크기 맞추기 , 베너 슬라이드 되게 */
+/* banner */
+
+
+.slidBanner {
+	width: 100%;
+	overflow: hidden;
+}
+
+.slidBanner ul {
+	width: calc(100% * 3);
+	display: flex;
+	animation: slide 20s infinite;
+}
+
+.slidBanner li {
+	width: calc(100% / 3);
+}
+
+.slidBanner img {
+	width: 100%;
+
+}
+
+/* 광고 협찬 베너--------------------------------------------*/
+.slidBanner2 {
+	width: 100%;
+	overflow: hidden;
+}
+
+.slidBanner2 ul {
+	width: calc(100% * 4);
+	display: flex;
+	animation: slide 100s infinite;
+}
+
+.slidBanner2 li {
+	width: calc(100% / 4);
+	margin: 0px 25px;
+}
+
+.slidBanner2 img {
+	width: 100%;
+}
+
+/*-------------------------------------------------------*/
+
+@keyframes slide {
+	0% {
+		margin-left: 0;
+	}
+	/* 0 ~ 10  : 정지 */
+	15% {
+		margin-left: 0;
+	}
+
+	/* 10 ~ 25 : 변이 */
+	33% {
+		margin-left: -100%;
+	}
+
+	/* 25 ~ 35 : 정지 */
+	48% {
+		margin-left: -100%;
+	}
+	/* 변이 */
+	66% {
+		margin-left: -200%;
+	}
+	
+	/*  정지 */
+	81% {
+		margin-left: -200%;
+	}
+	/* 100 ~ 0 : 변이 */
+	99% {
+		margin-left: 0;
+	}
+}
+
+
+
+/*section2*/
+/* ----------------------------------------------------------------------------------- */
+.vipBoard {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px 0px;
+}
+
+.vipBoard img {
+	width: 100%;
+	height: 100%;
+	padding: 10px 0px;
+	object-fit: contain;
+}
+
+.vipBoard div {
+	font-size: .8rem;
+}
+
+.vipBoard > div.col {
+	height: 300px;
+	width: 25%;
+}
+
+.vipBoard > div.col > a {
+	border: 1px solid #e5e5e5;
+	padding: 10px;
+	height: 100%;
+	width: 100%;
+}
+
+.vipTitel {
+	height: 10%;
+}
+
+.vipImg {
+	height: 70%;
+}
+
+.vipText1 {
+	height: 10%;
+}
+
+.vipText2 {
+	height: 10%;
+}
+
+
+
+
+
+
+/*===================================================================================*/
+
+
+
+/*indexPage tap manu ===================================================================*/
+
+.sectionLink > input[type="radio"] {
+	display: none;
+}
+
+/* 개인 기업 로그인 스위치*/
+.sectionLink > input[type="radio"] + label {
+	float: left;
+	width: 50%;
+	/*cursor: pointer;*/
+}
+
+.sectionLink > input[id="tab01"] + label {
+	background: url(/img/individual.png) no-repeat center center;
+	height: 150px;
+	width: 50%;
+}
+
+.sectionLink > input[id="tab02"] + label {
+	background: url(/img/enterprise.png) no-repeat center center;
+	height: 150px;
+	width: 50%;
+}
+
+.sectionLink > input[id="tab01"]:checked + label {
+	background: url(/img/individual_click.png) no-repeat center center;
+}
+
+.sectionLink > input[id="tab02"]:checked + label {
+	background: url(/img/enterprise_click.png) no-repeat center center;
+}
+
+/*개인 기업 로그인 이미지*/
+.sectionLink > input[type="radio"] + label img {
+	width: 100%;
+}
+
+
+/*클릭시 태두리 표시*/
+.sectionLink > input[type="radio"]:checked + label > img {
+	border: 0px;
+}
+
+
+/* 인풋에 체크가 해당 요소보이게 설정 */
+input[id="tab00"]:checked ~ .con0 {
+	display: block;
+}
+
+input[id="tab01"]:checked ~ .con1 {
+	display: block;
+}
+
+input[id="tab02"]:checked ~ .con2 {
+	display: block;
+}
+
+/*로그인 박스*/
+.conbox {
+	float: left;
+	clear: both;
+	width: 100%;
+	height: 350px;
+	background: #ffffff;
+	margin: 0 auto;
+	display: none;
+	margin-top: -3px;
+
+}
+
+/*보통 화면(퀵메뉴바)*/
+.con0 {
+	font-size: 10px;
+}
+
+/*X 버튼*/
+.conbox > label > img {
+	padding: 2px 2px 2px 2px;
+	width: 10%;
+	height: auto;
+	float: right;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+/*indexPage tap manu end ===================================================================*/
+
+/*로그인 ----------------------------------------------------*/
+.qukLogin {
+	clear: both;
+	margin-top: 6px;
+	padding: 0px 5%;
+}
+
+.qukLogin > form > div {
+	margin: 20px 0px 0px;
+}
+
+.signBox {
+	float: left;
+	margin: 10px 0px;
+	width: 80%;
+}
+
+.signBox > input {
+	height: 35px;
+	width: 100%;
+}
+
+
+.loginButton > button {
+	border: none;
+	margin: 20px 0px 0px;
+	height: 70px;
+	width: 20%;
+	background-color: #1162a7;
+	color: #ffffff;
+}
+
+.snsLogin {
+	padding-top: 20px;
+	clear: both;
+}
+
+.snsLogin a {
+	float: left;
+	width: 50%;
+}
+
+.snsLogin img {
+	width: 100%;
+}
+
+.membershopButton {
+	clear: both;
+	padding: 30px 0px;
+	width: 100%;
+	height: 40px;
+}
+
+/*작은 로그인 부가버튼*/
+.minMembership {
+	background: #e5e5e5;
+	height: 33px;
+	text-align: center;
+}
+
+.minMembership > div {
+	display: inline-block;
+    font-size: 12px;
+}
+
+.qukMemberBtn {
+	width: 48%;
+	padding: 10px 0px;
+}
+
+.qukSnsLogin {
+	width: 48%;
+	padding: 3px 0px;
+}
+
+.qukSnsLogin a {
+	float: left;
+	width: 23%;
+	margin: 0px 0px;
+}
+
+.qukSnsLogin img {
+	width: 80%;
+}
+
+.qukconnect {
+	width: 100%;
+}
+
+/*빠른 메뉴버튼*/
+.qukconnect > div.col {
+	float: left;
+	border: 1px solid #cef2fd;
+}
+
+.qukconnect img {
+	width: 100%;
+}
+
+
+
+/*로그인 후 데이타-------------------------------------------------------------------------*/
+
+div.loginDate {
+	background-color: #ffffff;
+	height: 60px
+}
+
+div.loginDate > div {
+	float: left;
+	width: 50%;
+}
+
+.loginDate input[type="button"] {
+	display: none;
+}
+
+
+.loginDate label {}
+
+.loginDate > div:nth-child(1) {
+	padding: 20px 0px 20px 20px;
+}
+
+div.loginDate > div:nth-child(2) {
+	padding: 12px 10px;
+}
+
+
+
+/*-------------------------------------------------------------------------------------*/
+/*  이력서 채용공고 리스트 */
+
+.minList {
+	text-align: center;
+	font-size: 16px;
+	margin: 50px 0px ;
+}
+
+.minList > table {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.minList tr {
+	float: left;
+	display: block;
+	width: 100%;
+	height: 60px;
+	padding: 20px 0px;
+	margin: 5px 0px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+.minList td {
+	float: left;
+	display: block;
+}
+
+.minList tr:nth-child(1) {
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+
+.minList .row1 {
+	width: 15%;
+}
+.minList .row2 {
+	width: 30%;
+}
+.minList .row3 {
+	width: 15%;
+}
+.minList .row4 {
+	width: 10%;
+}
+.minList .row5 {
+	width: 15%;
+}
+.minList .row6 {
+	width: 15%;
+}

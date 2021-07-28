@@ -1,0 +1,354 @@
+/*boardWrite CSS*/
+/* baise CSS==============================*/
+input[type="text"],
+input[type="password"]{
+	cursor: text;
+}
+/*hidden input class*/
+input[class="hidden"]{
+	display: none;
+}
+button[type="submit"],
+input[type="submit"]{
+	width: 100%;
+	height: 60px;
+}
+select{
+	width: 100%;
+}
+/* 바탕 크기 및 설정*/
+.sectionSell {
+	min-height: 100vh;
+	padding: 20px 0px;
+}
+
+textarea{
+	resize: none;
+	padding: 15px;
+	line-height: 25px;
+}
+/* 칼라 클레스*/
+.colorW{
+	background-color: #ffffff;
+}
+.colorG{
+	background-color: #e5e5e5;
+}
+
+/* 인풋 크기*/
+input[type="text"],
+input[type="password"],
+textarea {
+	width: 100%;
+}
+
+/* 입력창 높이 크기 같게 */
+select,
+input[type="text"],
+input[type="password"] {
+	height: 50px;
+	padding: 0px 15px;
+}
+/* 서브밋 버튼 크기*/
+.submitBtn {
+	width: 100%;
+	height: 60px;
+}
+.addBtn{
+	width: 30%;
+	height: 45px;
+}
+
+/*기본이미지*/
+#View_area {
+	margin: auto;
+	width: 50%;
+	height: 100%;
+}
+#View_area > img {
+	width: 100%;
+	height: 100%;
+}
+
+/*이미지 체크박스 css*/
+.imgCheckbox{
+	display: none;
+}
+input.imgCheckbox + label {
+	font-size: 10px;
+	width: 50%;
+	line-height: 46px;
+	border: 2px solid #a6a6a6;
+	display: block;
+	padding-left: 30px;
+	background: url('/img/checkOut.png') left/25px no-repeat;
+
+}
+input.imgCheckbox:checked + label {
+	background-image: url('/img/check.png');
+	border: 2px solid #1162a7;
+}
+
+.chkBoard label {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.chkBoard label {
+	width: 50%;
+}
+/* baise CSS END========================*/
+
+
+
+/* membership tapBox css----------------*/
+.boardSell {
+	border: 1px solid #e5e5e5;
+	margin: 0px 5px;
+}
+.boardSell input[type='radio']{
+	display: none;
+}
+/* tap에서 보여주는 컨텐트박스 */
+.boardWrite {
+	clear: both;
+	display: none;
+	font-size: 15px;
+}
+
+/* 개인 기업 로그인 스위치*/
+.boardSell > input[type="radio"] + label {
+	text-align: center;
+	float: left;
+	padding: 20px 0px;
+	width: 50%;
+	cursor: pointer;
+	background-color: #e5e5e5;
+}
+/* 개인 기업 로그인 스위치 링크버튼 */
+.boardSell > input[type="button"] + label {
+	text-align: center;
+	float: left;
+	padding: 20px 0px;
+	width: 50%;
+	cursor: pointer;
+}
+
+
+/* 체크 시 해당 컨텐트 보이게 */
+input[id="tab01"]:checked ~ .box1 {
+	display: block;
+}
+input[id="tab02"]:checked ~ .box2 {
+	display: block;
+}
+/*클릭시 tap 이벤트*/
+div.boardSell > input[type="radio"]:checked + label {
+	background-color: #ffffff;
+}
+
+/*tapBox 내용 CSS */
+
+.boardForm {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 5px 0px;
+}
+.boardForm > span {
+	display: block;
+	font-size: 22px;
+	width: 100%;
+}
+/*입력 요소*/
+.boardForm > div {
+	padding: 3% 0%;
+}
+.boardForm > div > label {
+	width: 100%;
+}
+.chkBoder > div{
+	width: 50%;
+}
+
+/*내부 폰트*/
+/*제목 폰트설정*/
+.boardSell > span {
+	display: block;
+	font-size: 22px;
+	width: 100%;
+}
+/*단위 제목*/
+.unitTitle{
+	font-size: 20px;
+	padding: 12px 0px;
+}
+.boardForm div.unitName{
+	font-size: 20px;
+	padding: 24px 5px;
+}
+
+/*이용약관*/
+.termsBox > div {
+	border: 1px solid #666666;
+	width: 100%;
+}
+.termsBox p.TermsOfService {
+	overflow-y: scroll;
+	height: 200px;
+}
+
+/* 동의 체크박스 */
+/*약관 동의 버튼*/
+input[type="checkbox"]{
+	float: left;
+	width: 20px;
+	height: 10px;
+	margin: 5px 0px;
+}
+/*약관 동의 텍스트*/ 
+.termsCK{
+	margin: 10px 0px;
+}
+
+/*아코디언 버튼 전체 설정*/
+/* 재목 스위치 설정 */
+input[id*="answer"] + label {
+	position: relative;
+	display: block;
+	color: #ffffff;
+	background: #e5e5e5;
+	font-size: 25px;
+}
+
+/*화살표 이미지 설정*/
+input[id*="answer"] + label em {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	display: inline-block;
+	background: url('/img/arrow.png') 0px 0px no-repeat;
+}
+
+/* 내용 박스 설정*/
+input[id*="answer"] + label + div {
+	display: none;
+	transition: all .35s;
+	font-size: 16px;
+	border: 1px solid #1162a7;
+}
+/*내용 폰트 설정*/
+input[id*="answer"] + label + div p {
+	display: inline-block;
+	padding: 10px;
+	color: #1162a7;
+}
+
+/* 아코디언메뉴 이벤트 설정 */
+/* 체크시 박스 칼라*/
+input[id*="answer"]:checked + label{
+	background: #cef2fd;
+}
+/* 숨은 박스*/
+input[id*="answer"]:checked + label + div {
+	display: block;
+}
+/*화살표 버튼*/
+input[id*="answer"]:checked + label em {
+	background-position: 0 -30px;
+}
+
+/*자동등록방지*/
+
+.autoRegister {
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+}
+#captcha{
+	padding: 15px 10px;
+}
+#captcha > div{
+	float: left;
+	width: 100%;
+	margin: 5px 0px;
+}
+#captcha_key{
+	float: left;
+	width: 45%;
+	margin: 0px 10px 0px 0px;
+}
+.autoRegister button {
+	float: left;
+	margin: 0px 10px 0px 0px;
+	width: 20%;
+	height: 50px;
+}
+
+
+/*=채용공고========================================*/
+
+/* 이미지 업로드 구역설정*/
+.imgForm{
+	border: 1px solid #666666;
+	height: 180px;
+	width: 50%;
+	margin: 0 auto;
+	padding: 10px;
+}
+.imgForm::after{
+	clear: both;
+	content: "";
+	display: block;
+}
+.imgBox {
+	margin: 0 auto;
+	padding: 10px;
+	height: 90%;
+	width: 100%;
+}
+.imgBox > div{
+	height: 100%;
+}
+
+.imgBox [type="file"] {
+	margin: 10px 0px;
+	float: left;
+	width: 100%;
+}
+
+.board01{
+	
+}
+
+
+/*다중 이미지 박스*/
+#preview img {
+	width: 100%;
+	height: 130px;
+}
+/*이미지 배열 비율*/
+#preview > div {
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+#preview::after{
+	clear: both;
+	content: "";
+	display: block;
+}
+/*-------------------------*/
+
+/* 수정버튼 */
+a.compBtnImg > img{
+	width: 100%;
+}
+
+/*resume Css*/
+.imgeBox{
+	margin: auto;
+}

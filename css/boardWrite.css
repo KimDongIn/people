@@ -1,0 +1,463 @@
+/*boardWrite CSS*/
+input[type="text"] {
+	cursor: text;
+}
+
+input[type="password"] {
+	cursor: text;
+}
+
+input[type="date"] {
+	cursor: text;
+}
+select{
+	width: 100%;
+}
+
+textarea{
+	resize: none;
+	padding: 15px;
+	line-height: 25px;
+}
+
+button[type="submit"]{
+	width: 100%;
+	height: 60px;
+}
+
+div > select{
+	width: 100%;
+}
+
+.sectionSell {
+	
+	min-height: 100vh;
+	padding: 50px 0px;
+}
+
+.addsearchBtn{
+	height: 30px;
+	width: 10%;
+}
+.addBox > input{
+	margin: 5px 0px;
+}
+
+.unitName{
+	margin: 10px 0px;
+	padding: 0px 0px;
+}
+
+/*submitBtn*/
+.submitBtn{
+	widows: 100%;
+	height: 60px;
+}
+/* title */
+.title{
+	margin: 0  auto;
+	width: 800px;
+	padding: 30px 10px;
+}
+
+.boardSell {
+	width: 800px;
+	margin: auto;
+}
+
+/* tapBox css*/
+.boardSell {
+	width: 800px;
+	margin: auto;
+	border: 2px solid #e5e5e5;
+}
+
+.boardWrite {
+	display: none;
+	font-size: 15px;
+}
+
+.boardSell > input[type="radio"] {
+	display: none;
+}
+
+/* 개인 기업 로그인 스위치*/
+.boardSell > input[type="radio"] + label {
+	float: left;
+	padding: 30px 0px;
+	width: 50%;
+	cursor: pointer;
+	background-color: #e5e5e5;
+}
+/* 개인 기업 로그인 스위치 링크버튼 */
+.boardSell > input[type="button"] + label {
+	text-align: center;
+	float: left;
+	padding: 30px 0px;
+	width: 50%;
+	cursor: pointer;
+}
+.boardSell > input[type="button"] {
+	display: none;
+}
+.colorW{
+	background-color: #ffffff;
+}
+.colorG{
+	background-color: #e5e5e5;
+}
+
+/* 인풋에 체크가 해당 요소보이게 설정 */
+input[id="tab01"]:checked ~ .box1 {
+	display: block;
+}
+
+input[id="tab02"]:checked ~ .box2 {
+	display: block;
+}
+
+/*클릭시 tap 이벤트*/
+div.boardSell > input[type="radio"]:checked + label {
+	background-color: #ffffff;
+}
+
+
+/*tapBox 내용 CSS */
+
+.boardForm {
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+.boardForm::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+.boardbox > div {
+	float: left;
+	margin: 0px 0px 15px;
+}
+
+/*내부 폰트*/
+.boardForm strong {
+	padding: 7px;
+	font-size: 25px;
+}
+
+/*제목 폰트설정*/
+.boardSell span {
+	clear: both;
+	display: block;
+	padding: 10px;
+	font-size: 25px;
+}
+
+/*인풋요소 */
+.boardForm > div {
+	float: left;
+	margin: 10px 0px;
+	padding: 0px 10px;
+}
+
+.boardForm input[type="text"],
+input[type="password"],
+textarea {
+	width: 100%;
+}
+
+
+
+/*주소찾기 버튼*/
+.addres > input[type="button"] {
+	margin: 5px 0px;
+	height: 45px;
+	width: 25%;
+}
+
+.addres > input[type="text"] {
+	margin: 5px 0px;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+	float: left;
+	width: 20px;
+	height: 10px;
+	margin: 10px 0px;
+}
+
+input[type="checkbox"] + p {
+	width: 30%;
+	padding: 6px 0px;
+}
+
+
+/* div 크기 같게 */
+.boardForm button,
+select,
+input[type="text"],
+input[type="password"],
+input[type="date"]{
+	height: 70px;
+}
+
+.boardForm > div > button {
+	float: right;
+	margin: 0 auto;
+}
+
+.submitBtn {
+	width: 100%;
+	height: 60px;
+}
+
+/*이용약관*/
+.termsBox > div {
+	border: 1px solid #666666;
+	width: 100%;
+}
+.termsBox p.TermsOfService {
+	overflow-y: scroll;
+	height: 200px;
+}
+
+.board01 input,
+select {
+	margin: 0px 0px 10px;
+}
+
+.board01 > div {
+	float: left;
+	padding: 0px 5px;
+}
+
+
+/*이력서& 고용*/
+.boardForm input[type="radio"] {
+	display: none;
+	margin: 10px;
+}
+
+/*이미지 체크박스 css*/
+input.imgCheckbox[type="checkbox"] {
+	display: none;
+}
+
+input.imgCheckbox + label {
+	float: left;
+	width: 100%;
+	line-height: 60px;
+	border: 2px solid #a6a6a6;
+	display: block;
+	padding-left: 30px;
+	background: url('/img/checkOut.png') left/22px no-repeat;
+	margin: 0px;
+	box-sizing: border-box;
+	background-position: 5px;
+}
+
+input.imgCheckbox:checked + label {
+	background-image: url('/img/check.png');
+	border: 2px solid #1162a7;
+}
+
+/*이미지 업로드 css*/
+/* 사진 구역*/
+#View_area {
+	position: relative;
+	width: 100%;
+	height: 70%;
+	display: inline-block;
+	margin-top: 8px;
+}
+/*기본이미지 
+#View_area {
+	background: url("/img/icon.png") no-repeat center;
+	background-size: 80%;	
+}*/
+/* onerror="this.src=''" */
+
+#View_area > img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.imgeBox {
+	text-align: center;
+	border: 1px solid black;
+	width: 33.33%;
+	height: 240px;
+	padding: 0px 25px;
+	float: left;
+}
+.imgeBox input {
+	padding: 0px 10px;
+	width: 100%;
+}
+
+.imgeBox #imgDelBtn{ /* 이미지 삭제 버튼 추가 */
+	display: inline-block;
+	width: 10px;
+	float: none;
+}	
+.imgeBox label[for="imgDelBtn"]{
+	border: 1px solid #666666;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 3px;
+    background: #efefef;
+}
+.imgeBox .delBtn{
+	text-align: left;
+    padding: 2px 12px;
+}
+
+/* 자동등록 */
+.autoRegister {
+	width: 60%;
+	margin: 10px auto;
+}
+
+.autoRegister div {
+	margin: 10px 5px;
+}
+
+.autoRegister strong {
+	font-size: 18px;
+	padding: ;
+}
+
+.autoRegister button {
+	width: 24%;
+	height: 50px;
+}
+
+/*memberIndi 개인 회원정보관리*/
+.linkBtn {
+	width: 100%;
+	height: 60px;
+}
+
+
+/*--------------------------------------------*/
+
+
+.companyBoard {
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+
+.companyBoard > div {
+	margin: 10px 0px;
+}
+
+.companyBoard > div > input {
+	margin: 10px 0px;
+}
+
+.company01 > div {
+	float: left;
+	width: 100%;
+	margin: 10px 0px;
+}
+.company01 input {
+	width: 100%;
+}
+
+.company01 > div.imgeBox {
+	margin: 10px 0px;
+}
+
+.imgUplode > * {
+	float: left;
+}
+
+.imgUplode > #View_area {
+	position: relative;
+	width: 25%;
+	border: 0px solid #000000;
+	background: #6666;
+}
+
+/*--이미지 ---------------------------------------------------*/
+
+
+.imgBox [type="file"] {
+	margin: 20px 0px;
+	float: left;
+	width: 100%;
+}
+
+.imgBox [type="file"] + label {
+	width: 100px;
+}
+
+#preview img {
+	width: 100%;
+	height: 150px;
+}
+
+#preview > div {
+	float: left;
+	padding: 20px;
+}
+/*이미지 클라스*/
+.obj{
+	width: 100%;
+	height: 100%;
+}
+
+/*----------------------------------------------------*/
+
+input.imgCheckbox2[id="18"]{
+	display: none;
+}
+
+input.imgCheckbox2[id="18"] + label{
+	float: left;
+	width: 25%;
+	line-height: 60px;
+	border: 2px solid #a6a6a6;
+	display: block;
+	padding-left: 30px;
+	background: url('/img/checkOut.png') left/22px no-repeat;
+	margin: 0px 0px 5px;
+}
+
+input.imgCheckbox2[id="18"]:checked + label {
+	background-image: url('/img/check.png');
+	border: 2px solid #1162a7;
+}
+
+
+/*회원탈퇴버튼*/
+.secessionBtn{
+	text-align: right;
+	color: #0062ab;
+}
+.secessionBtn a{ 
+	margin: 0px 20px;
+}
+/*==========================================*/
+
+input.imgCheckbox:checked + label {
+	background-image: url('/img/check.png');
+	border: 2px solid #1162a7;
+}
+
+.chceadBox {
+	width: 100%;
+	margin: 0 auto;
+}
+.chceadBox::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+.chceadBox > div {
+	float: left;
+	margin: 0px 0px 15px;
+	padding: 0px 10px 0 0;
+}

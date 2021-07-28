@@ -1,0 +1,135 @@
+
+
+.loginBox{
+	padding: 30px 20px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+/* 라벨 라디오버튼 숨기기*/
+.loginBox > input[type="radio"] {
+	display: none;
+}
+
+/* 인풋에 체크가 해당 요소보이게 설정 */
+input[id="tab01"]:checked ~ .con1 {
+	display: block;
+}
+input[id="tab02"]:checked ~ .con2 {
+	display: block;
+}
+
+/*로그인 박스*/
+.conbox {
+	margin: 0 auto;
+	display: none;
+	border: 1px solid #cef2fd;
+}
+.logBox{
+	margin: 20px 0;
+}
+/*--------------------------------------------*/
+
+/* 재목 스위치 설정 */
+/* 개인 기업 로그인 스위치*/
+.loginBox > input[type="radio"]+label {
+	width: 50%;
+	padding: 15px 0px;
+	position: relative;
+	display: block;
+	cursor: pointer;
+	text-align: center;	
+	background: #1162a7;
+	color: #ffffff;
+}
+
+/*클릭시 태두리 표시*/
+.loginBox > input[type="radio"]:checked + label{
+	background: #cef2fd;
+	color: #000000;
+	border: 1px solid #1162a7;
+}
+
+/* 내용 박스 설정*/
+/*
+.loginBox > input[type="radio"] + label + div {
+	display: none;
+	transition: all .35s;
+	border: 1px solid #1162a7;
+	padding: 30px 70px;
+}
+*/
+
+.loginBox > input[type="radio"] + label + div::after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+/* 아코디언메뉴 이벤트 설정 */
+.loginBox > input[type="radio"]:checked + label + div {
+	display: block;
+}
+/*---------------------------------------------*/
+
+/*SNS 로그인 버튼*/
+
+.snsLogin::after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.snsLogin a {
+	float: left;
+	width: 50%;
+}
+.snsLogin img {
+	width: 100%;
+}
+
+/*로그인 입력창*/
+.signBox {
+	float: left;
+	width: 75%;
+}
+.signBox > input {
+	height: 35px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.loginButton{
+	float: left;
+	width: 25%;
+}
+
+.loginButton > button {
+	border: none;
+	width: 100%;
+	height: 70px;
+	background-color: #1162a7;
+	color: #ffffff;
+}
+
+/*SNS 로그인-------*/
+.qukLogin{
+	padding: 0px 30px;
+}
+
+.snsLogin {
+	padding-top: 50px;
+	clear: both;
+}
+.snsLogin > div {
+	text-align: center;
+	width: 100%;
+}
+
+/*회원가입 링크*/
+.membershopButton{
+	padding: 30px 0px;
+	clear: both;
+	float: left;
+	margin: 10px 0px;
+}
+

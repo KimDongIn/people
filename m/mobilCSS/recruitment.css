@@ -1,0 +1,18 @@
+
+.recruitmentSell{
+	clear: both;
+	background-color: #cef2fd;
+	width: 100%;
+	height: 1000px;
+	padding: 0px 15%;
+}
+.recruitmentSell > div{
+	float: left;
+	height: inherit;
+}
+.recruitmentCategory {
+	background-color: #ffffff;
+	width: 240px;
+}
+
+

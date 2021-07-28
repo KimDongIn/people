@@ -1,0 +1,88 @@
+
+		<section>
+			<div class="sectionSell">
+
+
+				<div class="myDate" style="">
+
+					<div class="myImg">
+						<!--이미지-->
+						<div id='View_area' style="">
+						</div>
+						
+						<!---->
+						<input type="button" name="" id="imgBtn1" onchange="">
+						<label for="imgBtn1">
+							<img id="photoUplode" src="/img/photoCamera.png">
+						</label>
+						
+						<!---->
+						<input type="button" name="" id="imgBtn2" onchange="">
+						<label for="imgBtn2">
+							<img id="photoCancel" src="/img/photoCancel.png">
+						</label>
+
+
+						<!-- 이미지 업로드 버튼
+						<div style="">
+							<input type="file" name="profile_pt" id="profile_pt" onchange="previewImage(this,'View_area')">
+						</div>-->
+					</div>
+
+
+
+					<!--기본 정보-->
+					<div class="basicInformation">
+
+						<div class="basicInformationTop">
+							<span>기본정보</span>
+							
+							<input type="button" name="" id="" onClick="location.href='#'">
+							<label for="">
+								<img id="cvFormalButtom" src="/img/cvFormalButtom.png">
+							</label>
+
+							<input type="button" name="" id="" onClick="location.href='#'">
+							<label for="">
+								<img id="cvButtom" src="/img/cvButtom.png">
+							</label>
+						</div>
+
+						<div class="col">
+							<div class="col-all-6">이름</div>
+							<div class="col-all-6"><?echo $member['mb_name'];?></div>
+
+							<div class="col-all-6">아이디</div>
+							<div class="col-all-6"><?echo $member['mb_id'];?></div>
+
+						</div>
+
+						<div class="col">
+							<div class="col-all-6">이메일</div>
+							<div class="col-all-6"><?echo $member['mb_email'];?></div>
+
+							<div class="col-all-6">전화번호</div>
+							<div class="col-all-6"><?echo $member['mb_hp'];?></div>
+
+							<div class="col-all-6">주소</div>
+							<div class="col-all-6"><?echo $member['mb_add1'];?><?echo $member['mb_add2'];?><?echo $member['mb_add3'];?></div>
+						</div>
+
+					</div>
+				</div>
+
+				
+				<span style="">추천 채용공고</span>
+				<div class="bestResources">
+
+
+				</div>
+
+
+				<span style="">지원 현황</span>
+				<div class="supportStatus">
+
+				</div>
+
+			</div>
+		</section>

@@ -1,0 +1,59 @@
+INFO	[2021-04-27 06:27:53:487] <28255> START INIPHP cancel (NV5053-20190404)(OS:Linux3.10.0-1160.21.1.el7.x86_64,PHP:7.3.13)
+DEBUG	[2021-04-27 06:27:53:487] <28255> inipayhome:/www/carhnt1.godohosting.com/yc5/shop/inicis
+DEBUG	[2021-04-27 06:27:53:487] <28255> debug:false
+DEBUG	[2021-04-27 06:27:53:487] <28255> type:cancel
+DEBUG	[2021-04-27 06:27:53:487] <28255> mid:INIpayTest
+DEBUG	[2021-04-27 06:27:53:487] <28255> admin:1111
+DEBUG	[2021-04-27 06:27:53:487] <28255> tid:StdpayCARDINIpayTest20210427062644315137
+DEBUG	[2021-04-27 06:27:53:487] <28255> cancelmsg:���θ� ��� ���� ���
+INFO	[2021-04-27 06:27:53:487] <28255> Check Field OK
+INFO	[2021-04-27 06:27:53:487] <28255> INPUT TID > StdpayCARDINIpayTest20210427062644315137
+INFO	[2021-04-27 06:27:53:487] <28255> PI PUB KEY LOAD OK []
+INFO	[2021-04-27 06:27:53:495] <28255> PG PUB KEY LOAD OK [30]
+INFO	[2021-04-27 06:27:53:498] <28255> MERCHANT PRIV KEY LOAD OK
+INFO	[2021-04-27 06:27:53:499] <28255> MERCHANT PUB KEY LOAD OK [0]
+DEBUG	[2021-04-27 06:27:53:500] <28255> MAKE ENCRYPT OK[<?xml version="1.0" encoding="UTF-8"?>
+<CancelInfo>
+	  <CancelTID>StdpayCARDINIpayTest20210427062644315137</CancelTID>
+	  <CancelMsg urlencode="1">%BC%EE%C7%CE%B8%F4+%BF%EE%BF%B5%C0%DA+%BD%C2%C0%CE+%C3%EB%BC%D2</CancelMsg>
+	  <CancelReason/>
+	  <RefundAcctNum/>
+	  <RefundBankCode/>
+	  <RefundAcctName/></CancelInfo>]
+INFO	[2021-04-27 06:27:53:501] <28255> MAKE BODY OK
+INFO	[2021-04-27 06:27:53:502] <28255> SIGN OK
+INFO	[2021-04-27 06:27:53:502] <28255> MAKE HEAD OK
+DEBUG	[2021-04-27 06:27:53:502] <28255> MSG_TO_PG:[0105100175D SHA1                   0                                      300420INIpayTest                   0StdpayCARDINIpayTest20210427062644315137<?xml version="1.0" encoding="UTF-8"?>
+<INIpay>
+	  <CancelInfo>
+	    <SessionKey>06I3Gz5tHdCa4cG/KZN22WrwE5cgChb48QJ3hI6z50JYcnNGOAN7dsuxszrVabnL
+Io+C7/88BE2cBh5dtnl0Zcy+9l9EiAEs1DwdD2zE7v6LHiUdNu0KdT+ohwtXJurr
+37OPSbYkAbr1nTwWE15rpef1n4xQ/m5JcnspRUZxteWiIaJVsHA6iw==
+</SessionKey>
+	    <Encrypted>BGxdLJndFIR5/k/j8PZHLzdHdbm8DsvYgL4KBNmGhV2U9VYjui02sJb/7xRCbhGB
+Pp56olve3NJicfueigEn2u9gILi6vC+fzBe7iBaSlm+/DqE65LFPvWyQ+pS7Da/s
+o9yHXGB9Pde/7LT5rD/+to1mN+NaJQRJLP8uHzqi4pJWF0N/ExgPTLOVZ7TwrFlF
+6Gd+XtyuAhH2kce5Z6DxxGTN8cu/KJ5P4WvevgI/B3ukZpbbDIly62IIX0l+6Nvt
+p/MSHOC2EWCCZu6HmgE7Zb2kN0jKUeTdlTKS3mhXtIFQuVybyULRiY+UzhWRM9Re
+pMKX0SflAwC2hxTpzXyZqFbDLSTqk/WOA/NQsGVvP+0Nyx211jbc8bAhdXgOsczJ
+IwQTfILd8G9AcqOJNwCYgm/MRfOwVikI2B46XsnwOgA=
+</Encrypted></CancelInfo>
+	  <ReservedInfo>
+	    <MReserved1/>
+	    <MReserved2/>
+	    <MReserved3/></ReservedInfo>
+	  <ManageInfo>
+	    <Language/>
+	    <URL/>
+	    <TXVersion>NV5053B20190404canceLinux     PHPchkfake   3.10.0-1160.21.1.el7.x86_64PHP</TXVersion>
+	    <TXUserID/>
+	    <TXRegNum/></ManageInfo></INIpay>ZGnX+4G2DBpiUMUsGp8iZjMO8lXLXVega0Ie2VnjBhGFKAY0U10gFiGsEKP8jioF
+w2NHpt6K2HS1ffMS4oYrUOsNx1OmbS1eGeT8t63rDqbmR2Z1DBY1WpLPo4Dl4Rwn
+/RUZk54i0bAy6bVGFGSk+YBdSaspN2xZ2OJQsfdBg74=
+]
+INFO	[2021-04-27 06:27:53:507] <28255> DNS LOOKUP OK(formpg.inicis.com, 203.238.37.3:34049) laptime:0.004
+ERROR	[2021-04-27 06:27:58:512] <28255> [formpg.inicis.com(203.238.37.3) 소켓연결오류(1차):: 2차 연결시도
+INFO	[2021-04-27 06:27:58:516] <28255> DNS LOOKUP OK(39.115.212.10, 39.115.212.10:34049) laptime:
+ERROR	[2021-04-27 06:28:03:521] <28255> [39.115.212.10소켓연결오류(2차)::(115)(Operation now in progress)
+INFO	[2021-04-27 06:28:03:523] <28255> END cancel [TX9509|[39.115.212.10소켓연결오류(2차)::(115)(Operation now in progress)] Laptime:[10.052sec]
+INFO	[2021-04-27 06:28:03:523] <28255> ===============================================================

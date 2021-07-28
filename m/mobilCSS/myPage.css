@@ -1,0 +1,227 @@
+div.sectionSell {
+	padding: 20px 0px;
+}
+
+input[type="button"] {
+	display: none;
+}
+
+/*이미지 컨트롤 ID*/
+
+
+/* 리스트 표 설정*/
+.tableHeader {
+	border-top: 2px solid #000000;
+	border-bottom: 2px solid #666666;
+}
+.tableList {
+	border-top: 2px solid #e5e5e5;
+	border-bottom: 2px solid #e5e5e5;
+}
+
+/*---------------------------------------*/
+
+/* myPage ===========================*/
+.myDate{
+	display: flex;
+	flex-wrap: wrap;
+}
+.myDate > div{
+	width: 100%;
+}
+
+.View_area{
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
+.View_area > img{
+	width: 100%;
+	object-fit: contain;
+}
+/* myComp ===========================*/
+/*재목 CSS*/
+.sectionSell span {
+	color: #1162a7;
+	font-size: 25px;
+}
+
+/* 전체 박스 설정*/
+.sectionSell > div {
+	margin-bottom: 20px;
+	border: 1px solid #666666;
+}
+
+/* myPageComp content area----------*/
+/*사진 창*/
+/*
+.myImg { 
+	margin: 0 auto;
+	padding: 10px;
+	width: 150px;
+}
+*/
+/*회원 기본정보*/
+.basicInformation {
+	padding: 10px;
+	height: 100%;
+}
+/*채용공고 관리*/
+div.bestResources {
+	width: 100%;
+}
+/*추천 인제*/
+div.bestTalent {
+	width: 100%;
+	height: 150px;
+}
+/* myPageComp content area END----------*/
+
+
+/*링크버튼 구역*/
+.basicInformationTop {
+	margin: 10px 0px;
+}
+
+.basicInformationTop > label{
+	display: inline-block;
+	width: 20%;
+	height: 40px;
+}
+/* 링크버튼 이미지 */
+.basicInformationTop > label > img {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+/*내용 틀*/
+.basicInformation .col {
+	margin: 20px 0px 0px;
+}
+.basicInformation .col::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+.basicInformation .col > div {
+	float: left;
+	margin: 10px 0px;
+}
+
+.col > .add {
+	height: 100%;
+}
+/* 채용공고 표---------------*/
+.bestResources > table {
+	width: 100%;
+	text-align: center;
+	font-size: 1rem;
+}
+.bestResources tr {
+	display: flex;
+	width: 100%;
+	margin: 5px 0px;
+}
+.bestResources td {
+	padding: 5px 3px;
+	margin: 0 auto;
+}
+.bestResources .row1 {
+	width: 30%;
+}
+.bestResources .row2 {
+	width: 30%;
+}
+.bestResources .row3 {
+	width: 15%;
+}
+.bestResources .row6 {
+	width: 15%;
+}
+.bestResources .row7 {
+	width: 10%;
+}
+.pageLinkImg{
+	width: 100%;
+}
+/*-채용공고 표 끝---------------*/
+
+
+
+/*추천 채용공고*/
+div.bestTalent::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+/* 추천인 정렬*/
+.bestTalent > div {
+	float: left;
+	height: 150px;
+	padding: 10px 15px;
+}
+
+.bestTalent .row1 {
+	height: 20%;
+	text-align: center;
+}
+.bestTalent .row2 {
+	height: 80%;
+	padding: 0px 22px;
+}
+.bestTalent .row2 > img{
+	height: 100%;
+	width: 100%;
+}
+
+/*myPage Indi*/
+
+
+.supportStatus > table {
+	width: 100%;
+	text-align: center;
+}
+.supportStatus tr {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 10px 0px;
+}
+.supportStatus td {
+	display: block;
+	padding: 10px 0px;
+	font-size: 10px;
+}
+
+.supportStatus .row1 {
+	width: 20%;
+}
+
+.supportStatus .row2 {
+	width: 30%;
+}
+
+.supportStatus .row3 {
+	width: 30%;
+}
+
+.supportStatus .row4 {
+	width: 10%;
+}
+
+.supportStatus .row5 {
+	width: 10%;
+}
+
+/* myPage END================================*/
+
+
+
+/* 수정버튼 */
+#compBtnImg{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+

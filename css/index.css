@@ -1,0 +1,680 @@
+/* section1--------------------------------------------------------------------------------- */
+section div.sectionSell {
+	width: 100%;
+	padding: 40px 0;
+}
+
+.interfaceBoard {
+	width: 1280px;
+	margin: 0 auto;
+	padding: 30px 0px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.sectionLink {
+	width: 30%;
+	padding: 0 2.5%;
+}
+
+.bannerList {
+	width: 70%;
+	overflow: hidden;
+}
+
+.bannerList2 {
+	width: ;
+}
+
+.sec1 {
+	width: 1780px;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+
+/*슬라이드 베너 ===================================================================*/
+
+/* 베너 크기 맞추기 , 베너 슬라이드 되게 */
+/* banner */
+.bannerList ul {
+	display: flex;
+	position: relative;
+	height: 100%;
+}
+
+.bannerList ul li {
+	width: 100%;
+}
+
+.bannerList li img {
+	width: 100%;
+	object-fit: contain;
+}
+
+.g_item {
+	position: absolute;
+	width: 70%;
+	text-align: center;
+	bottom: 0;
+    left: 0;
+}
+
+.g_item ul li {
+	border: 1px solid #666666;
+	display: inline-block;
+	margin-right: 10px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+}
+
+.g_item ul li.on {
+	background: #f00;
+}
+
+
+
+/* 광고 협찬 베너--------------------------------------------*/
+.wingBanner {
+	padding: 30px 0px;
+	width: 230px;
+	height: inherit;
+	overflow: hidden;
+	margin: 0 10px;
+}
+
+.ban1 {}
+
+.ban2 {
+	cursor: pointer;
+}
+
+.wingBanner ul {
+	/*	width: calc(100% * 4);*/
+	display: flex;
+	/*	animation: slide 20s infinite;*/
+}
+
+.wingBanner li {
+	/*	width: calc(100% / 4);*/
+}
+
+.wingBanner img {
+	width: 100%;
+}
+
+/*-------------------------------------------------------*/
+
+@keyframes slide {
+	0% {
+		margin-left: 0;
+	}
+
+	/* 0 ~ 10  : 정지 */
+	15% {
+		margin-left: 0;
+	}
+
+	/* 10 ~ 25 : 변이 */
+	33% {
+		margin-left: -100%;
+	}
+
+	/* 25 ~ 35 : 정지 */
+	48% {
+		margin-left: -100%;
+	}
+
+	/* 변이 */
+	66% {
+		margin-left: -200%;
+	}
+
+	/*  정지 */
+	81% {
+		margin-left: -200%;
+	}
+
+	/* 100 ~ 0 : 변이 */
+	99% {
+		margin-left: 0;
+	}
+}
+
+
+
+/*section2*/
+/* ----------------------------------------------------------------------------------- */
+.vipBoard {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px 0px;
+	width: 1280px;
+	margin: auto;
+}
+
+.vipBoard img {
+	width: 100%;
+	height: 100%;
+	padding: 10px 0px;
+	object-fit: contain;
+}
+
+.vipBoard div {
+/*	font-size: 1.3rem;*/
+}
+
+.vipBoard > div.col {
+	height: 300px;
+	width: 25%;
+}
+
+.vipBoard > div.col > a {
+	border: 1px solid #e5e5e5;
+	padding: 10px;
+	height: 100%;
+	width: 100%;
+}
+
+.vipTitel {
+	font-size: 1.3rem;
+	height: 10%;
+}
+
+.vipImg {
+	height: 70%;
+}
+
+.vipText1 {
+	font-size: 1.7rem;
+	font-weight: 900;
+	height: 13%;
+	background: #fae100;
+}
+
+.vipText2 {
+	height: 10%;
+}
+
+
+
+
+
+
+/*===================================================================================*/
+
+
+
+/*indexPage tap manu ===================================================================*/
+
+.sectionLink > input[type="radio"] {
+	display: none;
+}
+
+/* 개인 기업 로그인 스위치*/
+.sectionLink > input[type="radio"] + label {
+	float: left;
+	width: 50%;
+	/*cursor: pointer;*/
+}
+
+.sectionLink > input[id="tab01"] + label {
+	background: url(/img/individual.png) no-repeat center center;
+	height: 150px;
+	width: 50%;
+}
+
+.sectionLink > input[id="tab02"] + label {
+	background: url(/img/enterprise.png) no-repeat center center;
+	height: 150px;
+	width: 50%;
+}
+
+.sectionLink > input[id="tab01"]:checked + label {
+	background: url(/img/individual_click.png) no-repeat center center;
+}
+
+.sectionLink > input[id="tab02"]:checked + label {
+	background: url(/img/enterprise_click.png) no-repeat center center;
+}
+
+.sectionLink > input[id="tab01"]:hover + label {
+	background: url(/img/individual_click.png) no-repeat center center;
+}
+
+.sectionLink > input[id="tab02"]:hover + label {
+	background: url(/img/enterprise_click.png) no-repeat center center;
+}
+
+/*개인 기업 로그인 이미지*/
+.sectionLink > input[type="radio"] + label img {
+	width: 100%;
+}
+
+
+/*클릭시 태두리 표시*/
+.sectionLink > input[type="radio"]:checked + label > img {
+	border: 0px;
+}
+
+
+/* 인풋에 체크가 해당 요소보이게 설정 */
+input[id="tab00"]:checked ~ .con0 {
+	display: block;
+}
+
+input[id="tab01"]:checked ~ .con1 {
+	display: block;
+}
+
+input[id="tab02"]:checked ~ .con2 {
+	display: block;
+}
+
+/*로그인 박스*/
+.conbox {
+	float: left;
+	clear: both;
+	width: 100%;
+	height: 350px;
+	background: #ffffff;
+	margin: 0 auto;
+	display: none;
+	margin-top: -3px;
+
+}
+
+/*보통 화면(퀵메뉴바)*/
+.con0 {
+	font-size: 10px;
+}
+
+/*X 버튼*/
+.conbox > label > img {
+	padding: 2px 2px 2px 2px;
+	width: 10%;
+	height: auto;
+	float: right;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+/*indexPage tap manu end ===================================================================*/
+
+/*로그인 ----------------------------------------------------*/
+.qukLogin {
+	clear: both;
+	margin-top: 6px;
+	padding: 0px 5%;
+}
+
+.qukLogin > form > div {
+	margin: 20px 0px 0px;
+}
+
+.signBox {
+	float: left;
+	margin: 10px 0px;
+	width: 80%;
+}
+
+.signBox > input {
+	height: 35px;
+	width: 100%;
+}
+
+
+.loginButton > button {
+	border: none;
+	margin: 20px 0px 0px;
+	height: 70px;
+	width: 20%;
+	background-color: #1162a7;
+	color: #ffffff;
+	font-size: 1rem;
+}
+
+.snsLogin {
+	padding-top: 20px;
+	clear: both;
+}
+
+.snsLogin a {
+	float: left;
+	width: 50%;
+}
+
+.snsLogin img {
+	width: 100%;
+}
+
+.membershopButton {
+	clear: both;
+	padding: 30px 0px;
+	width: 100%;
+	height: 40px;
+}
+
+.membershopButton a {
+	font-size: 16px;
+}
+
+/*작은 로그인 부가버튼*/
+.minMembership {
+	background: #e5e5e5;
+	height: 33px;
+	text-align: center;
+}
+
+.minMembership > div {
+	display: inline-block;
+	font-size: 12px;
+}
+
+.qukMemberBtn {
+	width: 48%;
+	padding: 10px 0px;
+}
+
+.qukSnsLogin {
+	width: 48%;
+	padding: 3px 0px;
+}
+
+.qukSnsLogin a {
+	float: left;
+	width: 23%;
+	margin: 0px 0px;
+}
+
+.qukSnsLogin img {
+	width: 80%;
+}
+
+.qukconnect {
+	width: 100%;
+}
+
+/*빠른 메뉴버튼*/
+.qukconnect > div.col {
+	float: left;
+	border: 1px solid #cef2fd;
+}
+
+.qukconnect img {
+	width: 100%;
+}
+
+.subBanner {
+	background: #ffffff;
+}
+.subBanner img{
+	width: 100%;
+	padding: 10px 10px;
+}
+
+
+
+/*로그인 후 데이타-------------------------------------------------------------------------*/
+
+div.loginDate {
+	background-color: #ffffff;
+	height: 60px
+}
+
+div.loginDate > div {
+	float: left;
+	width: 50%;
+}
+
+.loginDate input[type="button"] {
+	display: none;
+}
+
+
+.loginDate label {}
+
+.loginDate > div:nth-child(1) {
+	padding: 20px 0px 20px 20px;
+}
+
+div.loginDate > div:nth-child(2) {
+	padding: 12px 10px;
+}
+
+
+
+/*-------------------------------------------------------------------------------------*/
+/*  이력서 채용공고 리스트 */
+
+.minList {
+	text-align: center;
+	font-size: 16px;
+	margin: 50px 0px;
+}
+
+.minList > table {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.minList tr {
+	float: left;
+	display: block;
+	width: 100%;
+	height: 60px;
+	padding: 20px 0px;
+	margin: 5px 0px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.minList td {
+	float: left;
+	display: block;
+}
+
+.minList tr:nth-child(1) {
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+
+.minList .row1 {
+	width: 15%;
+}
+
+.minList .row2 {
+	width: 30%;
+}
+
+.minList .row3 {
+	width: 15%;
+}
+
+.minList .row4 {
+	width: 10%;
+}
+
+.minList .row5 {
+	width: 15%;
+}
+
+.minList .row6 {
+	width: 15%;
+}
+
+
+/**/
+.freeViwe {
+	height: 245px;
+	width: 100%;
+	background: #ffffff;
+	overflow-y: scroll;
+	padding: 10px;
+}
+
+.freeViwe span {
+	font-size: 1.5rem;
+	line-height: 300%;
+	padding: 0 20px 0 0px;
+}
+
+.freeViwe table {
+	width: 100%;
+}
+
+.freeViwe td {
+	/*	border: 1px solid #e5e5e5;*/
+	line-height: 250%;
+}
+
+.freeViwe td:hover {
+	background: #0062ab;
+	color: #ffffff;
+}
+
+
+/*YC5 추가====================================*/
+#hd_pop {
+	z-index: 1000;
+	position: fixed;
+	margin: 0 auto;
+}
+
+.hd_pops {
+	position: absolute;
+	border: 1px solid #e9e9e9;
+	background: #fff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hd_pops img {
+	max-width: 100%;
+	vertical-align: middle;
+	font-size: 1em;
+}
+
+.hd_pops_footer {
+	padding: 0;
+	background: #000;
+	color: #fff;
+	text-align: left;
+	position: relative;
+}
+
+.hd_pops_footer .hd_pops_reject {
+	background: #000;
+	text-align: left;
+}
+
+.hd_pops_footer button {
+	padding: 10px;
+	border: 0;
+	color: #fff;
+}
+
+.hd_pops_footer .hd_pops_close {
+	background: #393939;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/*====================================*/
+	.listBoard {
+		width: 1280px;
+		margin: auto;
+	}
+
+	.listBoard table {
+		text-align: center;
+		border-spacing: 0;
+		width: 100%;
+		/*		border: 1px solid #666666;*/
+	}
+
+	.listBoard tr {
+		display: flex;
+		margin: 10px 0;
+	}
+
+	.listBoard th {
+		background: #cef2fd;
+		font-size: 1.3rem;
+		font-weight: 800;
+		line-height: 300%;
+		border-top: 2px solid #666666;
+		border-bottom: 2px solid #666666;
+	}
+	.listBoard th,
+	.listBoard td{
+		padding: 0 10px;
+	}
+
+	.listBoard tr {
+		font-size: 1rem;
+		line-height: 250%;
+		border-top: 1px solid #e5e5e5;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.list1 th:nth-child(1),
+	.list1 td:nth-child(1) {
+		width: 10%;
+	}
+
+	.list1 th:nth-child(2),
+	.list1 td:nth-child(2) {
+		width: 30%;
+	}
+
+	.list1 th:nth-child(3),
+	.list1 td:nth-child(3) {
+		width: 15%;
+	}
+
+	.list1 th:nth-child(4),
+	.list1 td:nth-child(4) {
+		width: 30%;
+	}
+
+	.list1 th:nth-child(5),
+	.list1 td:nth-child(5) {
+		width: 15%;
+	}
+/*=====================*/
+	.list2 th:nth-child(1),
+	.list2 td:nth-child(1) {
+		width: 10%;
+	}
+
+	.list2 th:nth-child(2),
+	.list2 td:nth-child(2) {
+		width: 10%;
+	}
+
+	.list2 th:nth-child(3),
+	.list2 td:nth-child(3) {
+		width: 30%;
+	}
+
+	.list2 th:nth-child(4),
+	.list2 td:nth-child(4) {
+		width: 25%;
+	}
+
+	.list2 th:nth-child(5),
+	.list2 td:nth-child(5) {
+		width: 15%;
+	}
+
+	.list2 th:nth-child(6),
+	.list2 td:nth-child(6) {
+		width: 10%;
+	}

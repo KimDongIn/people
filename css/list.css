@@ -1,0 +1,700 @@
+.sectionColor1{
+	min-height: 90vh;
+}
+
+/*sideSearchBar*/
+form {
+	height: inherit;
+}
+
+div.sectionSell {
+}
+.min-height{
+	min-height: 100vh;
+}
+
+.sideSearchBar > input[type="radio"] {
+	display: none;
+}
+
+.sideSearchBar label {
+	text-align: center;
+	padding: 20px;
+	margin: 10px 0px;
+	display: block;
+	height: 60px;
+	border: 2px solid #1162a7;
+	background: #ffffff;
+/*
+	border-bottom: 2px solid #cef2fd;
+	border-top: 2px solid #cef2fd;
+*/
+}
+
+/*-----------------------------------------------*/
+
+/* 지역 라디오 박스 보이지 않게*/
+.searchSell input[type="radio"] {
+	display: none;
+}
+
+.select > input[type="checkbox"] {
+	display: none;
+}
+
+
+/*스위치 css ----------------------------------------------------------*/
+
+/*분류 1 스위치 */
+.searchSell > input[type="radio"] + label {
+	width: 20%;
+	height: 60px;
+	background-color: #ffffff;
+	display: inline-block;
+	float: left;
+	background-color: #1162a7;
+	color: #ffffff;
+	padding: 20px 0px;
+	text-align: center;
+}
+
+/*분류 2 칵테고리 지역별 */
+.select > label {
+	text-align: center;
+	float: left;
+	display: block;
+	border: 1px solid #e5e5e5;
+}
+
+.areaSelect > label {
+	margin: 15px 0px 0px 20px;
+	width: 80%;
+	height: 30px;
+}
+
+.jabSelect > label {
+	padding: 15px 0px;
+	width: 33.33%;
+	height: 55px;
+}
+
+
+/*스위치 css 끝----------------------------------------------------------*/
+
+
+/*체크시 이벤트*/
+/* 분류1 이벤트 ---------------------------------------------------------------*/
+
+/*분류 1 스위치*/
+.searchSell > input[type="radio"]:checked + label {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+/*분류1 칵테고리 보이게*/
+.searchSell input[id="areaSearch"]:checked ~ .areaSell {
+	display: block;
+}
+
+.searchSell input[id="jabSearch"]:checked ~ .jabSell {
+	display: block;
+}
+
+/* 분류1 이벤트 끝 ---------------------------------------------------------------*/
+
+/* 분류2 이벤트 ---------------------------------------------------------------*/
+
+/*분류 2 스위치*/
+/*분류 2 스위치  수정 된 부분 s*/
+.areaSelect .labelInputCheck:unchecked ~ .areaSelect label {
+	border: 1px solid #e5e5e5;
+}
+
+.areaSelect #area02:checked ~ .label02 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area031:checked ~ .label031 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area032:checked ~ .label032 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area033:checked ~ .label033 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area041:checked ~ .label041 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area042:checked ~ .label042 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area043:checked ~ .label043 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area044:checked ~ .label044 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area051:checked ~ .label051 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area052:checked ~ .label052 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area053:checked ~ .label053 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area054:checked ~ .label054 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area055:checked ~ .label055 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area061:checked ~ .label061 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area062:checked ~ .label062 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area063:checked ~ .label063 {
+	border: 5px solid #1162a7;
+}
+
+.areaSelect #area064:checked ~ .label064 {
+	border: 5px solid #1162a7;
+}
+
+
+/*분류 2 스위치   수정 된 부분 e*/
+/*분류2 체크시----------------------*/
+
+/* 상세 지역 이벤트 ------------------*/
+
+.areaBox > input[type="checkbox"]:checked + label {
+	border: 5px solid #1162a7;
+}
+
+.select > input[type="checkbox"]:checked + label {
+	border: 5px solid #1162a7;
+}
+
+/* 분류2 이벤트 끝 ---------------------------------------------------------------*/
+
+
+
+/*구역 설정*/
+/* 검색구역 전체*/
+.searchSell {
+	margin: 30px 0px 0px 50px;
+	width: 80%;
+	height: 100%;
+	float: left;
+}
+
+.searchSell > label::after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+/*서치 Top-------------------*/
+.areaSell {
+	clear: both;
+	width: 100%;
+	height: 365px;
+	display: none;
+	background-color: #ffffff;
+}
+
+.jabSell {
+	clear: both;
+	width: 100%;
+	height: 365px;
+	display: none;
+	background-color: #ffffff;
+}
+
+/*분류2  (서울 결기.... ) ----------------------------------*/
+.areaSelect {
+	overflow: auto;
+	padding: 10px;
+	float: left;
+	width: 20%;
+	height: 100%;
+	border-right: 1px solid #e5e5e5;
+}
+
+.jabSelect {
+	padding: 20px;
+	float: left;
+	width: 100%;
+	height: 100%;
+	border-right: 1px solid #e5e5e5;
+}
+
+/*분류2 세분화 ----------------------------------*/
+/*지역별*/
+.areaBox {
+	overflow: auto;
+	padding: 20px 0px 0px 40px;
+	float: left;
+	width: 80%;
+	height: 100%;
+	display: none;
+}
+
+/* 라벨버튼 */
+.labelBtn {
+	display: inline-block;
+	border: 2px solid #e5e5e5;
+	width: 20%;
+	height: 30px;
+	margin: 0px 20px 10px 0px;
+	text-align: center
+}
+
+.areaBox > input[type="checkbox"] {
+	display: none;
+}
+
+/*보통 화면(퀵메뉴바)*/
+
+/*X 버튼*/
+.conbox > label > img {
+	padding: 2px 2px 2px 2px;
+	width: 10%;
+	height: auto;
+	float: right;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+/*서브밋버튼*/
+.submitBtn {
+	width: 100%;
+	height: 60px;
+	float: right;
+	background-color: #e5e5e5;
+	color: ;
+	border: 1px solid #1162a7;
+}
+
+/*------------------------------------------*/
+.boardList {
+	position: relative;
+	width: 100%;
+    float: left;
+    background-color: #ffffff;
+    margin: 30px 0px;
+    min-height: 40vh;
+}
+
+.boardList > table {
+	width: 100%;
+	background: #ffffff;
+}
+
+.boardList > table tr {
+	display: block;
+	margin: 5px 0px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.boardList .watermark {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top:50%; left:50%;
+	width: 25%;
+	text-align: center;
+}
+.boardList .watermark img {
+	width: 100%;
+	opacity: 0.5;
+}
+.boardList .watermark p {
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 250%; 
+	color: #dedede;
+}
+
+.boardBox {
+	width: ;
+	height: 50px;
+	border: 1px solid #000000;
+}
+
+.infomation {
+	margin: 25px 0px;
+	padding: 0px 20px 0px;
+	height: 120px;
+	color: #000000;
+}
+
+.infomation strong {
+	font-size: 30px;
+	color: #666666;
+}
+
+.infomation p {
+	margin: 25px 0px 0px;
+	font-size: 12px;
+}
+
+.infomation span {
+	margin: 0px 20px 0px 0px;
+	font-size: 12px;
+	color: #000000;
+}
+
+.infomation > div {
+	float: left;
+	padding: 10px;
+}
+
+.infomation > div:nth-child(2) {
+	width: 15%;
+}
+.infomation > div:nth-child(3) {
+	width: 35%;
+}
+.infomation > div:nth-child(4) {
+	width: 15%;
+}
+.infomation > div:nth-child(5) {
+	width: 20%;
+}
+.infomation > div:nth-child(6) {
+	width: 15%;
+}
+
+
+.infomation > div > div {
+	margin: 10px 0px;
+}
+
+.infomation > a {
+	width: 100%;
+	text-align: left;
+	padding: 10px;
+}
+
+/*이력서 틀*/
+.sec1 {
+}
+
+.sec2 {
+	width: 15%;
+}
+.sec2 img{
+	width: 100%;
+	padding: 10px;
+}
+
+.sec3 {
+	width: 75%;
+}
+
+.sec4 {
+	width: 10%;
+	padding: 0px 10px;
+}
+.sec4 > input[type="button"]{
+	display: none;
+}
+.sec4 > label {
+	display: block;
+	padding: 15px 0px 0px;
+	width: 120px;
+	height: 50px;
+	background-color: #e5e5e5;
+	text-align: center;
+}
+
+.sec4 > p {
+	margin: 20px 0px 0px;
+	text-align: center;
+}
+/*=====================================*/
+/*리스트 없을때*/
+
+tr.noneList{
+	width: 100%;
+	text-align: center;
+	line-height: 300%;
+}
+.noneList > th{
+	width: 100%;
+	font-size: 30px;
+	color: #666666;
+	display: inline;
+}
+
+/*===============================================*/
+
+/*아코디언 전체 설정*/
+.QanAList {
+	margin: 0 auto;
+	width: 800px;
+}
+/*체크요소 안보이게*/
+.QanAList > input[type="radio"],
+.QanABtn > input[type="button"] {
+	display: none;
+}
+
+.QanABoard > div {
+	padding: 0px 0px 30px;
+	font-size: 25px;
+}
+
+.hideBoard{
+	padding: 1rem;
+}
+.hideBoard > p{
+	font-size: 1.5rem;
+}
+.hideBoard > img{
+	width: 100%;
+}
+.intext1{
+	margin: 0px 0px 0px 10px
+}
+.intext2{
+	margin: 0px 0px 0px 30px
+}
+
+.QanABoard {
+	width: 800px;
+	margin: 0 auto;
+	padding: 50px 0px;
+}
+
+.QanABoard > div {
+	padding: 0px 0px 30px;
+	font-size: 25px;
+}
+
+
+/* 재목 스위치 설정 */
+input[id*="answer"] + label {
+	position: relative;
+	display: block;
+	padding: 20px;
+	color: #ffffff;
+	background: #1162a7;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+/*화살표 이미지 설정*/
+input[id*="answer"] + label em {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	display: inline-block;
+	background: url('/img/arrow.png') 0px 0px no-repeat;
+}
+
+/* 내용 박스 설정*/
+input[id*="answer"] + label + div {
+/*	display: none;*/
+/*	transition: all .35s;*/
+/*	background: ;*/
+	font-size: 16px;
+	border: 1px solid #1162a7;
+}
+
+/*내용 폰트 설정*/
+input[id*="answer"] + label + div p {
+	display: inline-block;
+	padding: 20px;
+	color: #1162a7;
+}
+
+/* 아코디언메뉴 이벤트 설정 */
+/*
+input[id*="answer"]:checked + label + div {
+	display: block;
+}
+*/
+
+input[id*="answer"]:checked + label em {
+	background-position: 0 -30px;
+}
+
+
+
+/*나의 문의 게시판*/
+
+
+.inquiryBoard > table {
+	width: 100%;
+	background: #e5e5e5;
+}
+
+.inquiryBoard > table td {
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
+	font-size: 16px;
+	background: #ffffff;
+}
+
+.inquiryBoard td.col01 {
+	width: 10%;
+}
+
+.inquiryBoard td.col02 {
+	width: 65%;
+}
+
+.inquiryBoard td.col03 {
+	width: 25%;
+}
+
+.sideSearchBar {
+	width: 15%;
+	height: 515px;
+/*	background-color: #ffffff;*/
+	float: left;
+}
+
+
+/* 지원 현황 보기*/
+.supportCont{
+	width: 100%;
+	height: 200px;
+	margin: 50px 0px;
+	border-top: 1px solid #666666 ;
+	border-bottom: 1px solid #666666 ;
+}
+.supportCont::after{
+	clear: both;
+	content: "";
+	display: block;
+}
+.supportCont > div{
+	float: left;
+	height: 100%;
+}
+
+.supportList{
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.supportInfo1{
+	width: 20%;
+	padding: 10px;
+	background: #7777;
+}
+.supportInfo2{
+	width: 85%;
+	padding: 10px;
+	background: ;
+}
+.supportInfo3{
+	width: 15%;
+	padding: 30px 20px;
+}
+
+.supportInfo1 > img{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+.supportInfo2 > a{
+	float: left;
+	width: 100%;
+	height: 20%;
+}
+.supportInfo2 > div{
+	float: left;
+	padding: 20px 10px;
+}
+
+.supportInfo2 > div:nth-child(1){
+	width: 100%;
+	height: 20%;
+}
+.supportInfo2 > div:nth-child(2){
+	width: 15%;
+	height: 80%;
+}
+.supportInfo2 > div:nth-child(3){
+	width: 15%;
+	height: 80%;
+}
+.supportInfo2 > div:nth-child(4){
+	width: 25%;
+	height: 80%;
+}
+.supportInfo2 > div:nth-child(5){
+	width: 15%;
+	height: 80%;
+}
+.supportInfo2 > div:nth-child(6){
+	width: 15%;
+	height: 80%;
+}
+.supportInfo2 > div:nth-child(7){
+	width: 15%;
+	height: 80%;
+}
+
+.supportInfo2 strong{
+	font-size: 25px;
+}
+.supportInfo2 > div > div{
+	padding: 13px 0px;
+	text-align: center;
+}
+
+.supportInfo2::after{
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.supportInfo3 > div{
+    
+}
+
+.supportInfo3 > div:nth-child(1){
+	height: 20%;
+}
+.supportInfo3 > div:nth-child(2){
+	height: 80%;
+	padding: 20px 10px;
+}
+
+.supportInfo3 > div > div{
+	padding: 5px 0px 20px; 
+}
+
+
+.supportInfo3 a{
+	color: #1162a7;
+	
+}
+
